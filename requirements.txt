@@ -1,0 +1,16 @@
+langchain
+langchain_community
+fastapi 
+uvicorn
+langchain-groq==0.2.1
+pandas
+faiss-cpu
+python-dotenv
+pydub
+langchain_huggingface
+sentence-transformers
+python-multipart
+elevenlabs
+firebase-admin
+PyPDF2
+websockets

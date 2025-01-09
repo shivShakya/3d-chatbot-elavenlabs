@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D chatbot</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+
+   <button class="fixed-button"  id="openBtn">
+           <img src="assets/bot.png" id="img-open" alt="bot"/>
+           <div id="line-loader"></div>
+
+   </button>
+
+
+   <div id="box">
+          <div class="box" id="closeTab">
+               <div id="closeBtn">
+                    <img src="assets/close.png" style="width: 5vh;" alt="bot"/>
+              </div>
+          </div>
+          <div class="box" id="canvas-container">
+          </div>
+          <div id="controls" class="box">
+                <img  src="assets/waveform.png" alt="bot" id="mic-tap" />
+                <div class="overlay-container">
+                    <img id="mic-overlay1" src="assets/user_waveform.gif" style="display: none;" alt="bot" />
+                    <div id="states" style="position: relative;">Listening...</div>
+                   
+                    <img id="mic-overlay2" src="assets/mic.png" alt="bot" />
+                </div>
+          </div>
+   </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/FBXLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fflate/umd/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meshoptimizer/meshopt_decoder.js"></script>
+    <script src="./assets/files/WorkerPool.js"></script>
+    <script src="./assets/files/KTX2Loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.19.2/dist/ort.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.19/dist/bundle.min.js"></script>
+    <script type="module" src="/public/script.js"></script>
+
+</body>
+</html>
